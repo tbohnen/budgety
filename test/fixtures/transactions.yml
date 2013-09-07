@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  paymentType: MyString
+  paymentTo: MyString
+  amount: MyString
+  transactionDate: 2013-08-03 03:04:28
+
+two:
+  paymentType: MyString
+  paymentTo: MyString
+  amount: MyString
+  transactionDate: 2013-08-03 03:04:28

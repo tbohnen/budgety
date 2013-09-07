@@ -1,0 +1,22 @@
+<form ng-controller="AddTransactionsCtrl" ng-submit="addTransaction()">
+<div class="modal-header">
+	<h2>Add New Transaction</h2>
+</div>
+<div class="modal-body">
+<label for="PaymentType">Payment Type:</label>
+<input id="PaymentType" class="input-large" type="text" ng-model="transaction.paymentType" required/>
+
+<label for="PaymentTo">Payment To:</label>
+<input id="PaymentTo" class="input-large" type="text" ng-model="transaction.paymentTo" required/>
+
+
+<label for="Amount">Amount:</label>
+<input id="Amount" class="input-large" type="text" ng-model="transaction.amount" required/>
+
+
+<label for="TransactionDate">Transaction Date:</label>
+
+<input id="TransactionDate" type="text" class="datepicker" ng-model="transaction.transactionDate" required/>
+<button class="btn btn-primary">Add Transaction</button>
+</div>
+</form>

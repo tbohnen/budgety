@@ -1,0 +1,26 @@
+<div ng-controller="TransactionsCtrl" ng-cloak>
+	<h1>Recent Transactions</h1>
+  <button ng-click="openDialog()">Add New</button>
+  <br/>
+<br/>
+
+   <table class="table table-bordered table-striped table-hover">
+   <thead>
+      <tr>
+        <th>Payment To</th>
+        <th>Payment Type</th>
+        <th>Amount</th>
+        <th>Transaction Date</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="transaction in transactions | limitTo:10 | orderBy:paymentDate">
+        <td>{{transaction.paymentTo}}</td>
+        <td>{{transaction.paymentType}}</td>
+        <td>{{transaction.amount | currency:R}}</td>
+        <td>{{transaction.paymentDate}}</td>
+      </tr>
+    </tbody>
+ </table>
+</div>
